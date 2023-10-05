@@ -29,8 +29,11 @@
     justify-content: flex-start;
     flex-direction: row;
     position: relative;
-    margin-left: calc(4%/3);
+    margin-left: calc(4% - 4%/3*2);
     margin-bottom: 20px;
+}
+.m-bloc__card:nth-last-child(2n+2){
+    margin-right: calc(4% - 4%/3*2);
 }
 .m-bloc__card p{
     font-size: 25px;
@@ -65,4 +68,9 @@
 hr{
     width: 80%;
     margin: 0 auto;
+}
+@media screen and (max-width:400px) {
+    .m-bloc__card p{
+        left: 10px;
+    }
 }
