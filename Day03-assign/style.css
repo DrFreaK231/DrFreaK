@@ -105,12 +105,11 @@
 .qus dt a{
     display: flex;
     flex-direction: row;
-}
-.qus dt a p{
-    width: 95%;
-    padding-left: 20px;
+    justify-content: space-between;
+    text-decoration: none;
     align-items: center;
 }
+
 .qus dt a img{
     width: 30px;
     height: 30px;
