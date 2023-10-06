@@ -1,0 +1,9 @@
+@import 'layout/_header.scss';
+@import 'foundation/_body.scss';
+@import 'layout/page';
+@import 'object/project/_home.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+}

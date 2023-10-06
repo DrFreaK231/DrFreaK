@@ -1,0 +1,93 @@
+.topic {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.topic h1 {
+  padding: 20px 0 0 20px;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  padding: 30px;
+  background-color: rgb(115, 115, 115);
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.b-warp {
+  padding: 3.3333333333%;
+}
+.b-warp ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+.b-warp ul li {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.b-warp ul li:nth-child(2n+1) {
+  margin-right: 2%;
+}
+.b-warp ul li p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -5px;
+}
+.b-warp ul li p b {
+  display: inline-block;
+}
+.b-warp ul li img {
+  width: 100%;
+}
+.b-warp ul li img:hover {
+  border: 6px solid blue;
+  box-sizing: border-box;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-f {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-f a {
+  width: 20%;
+  margin: 20px auto;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+.home-f a:hover {
+  border-color: rgb(115, 115, 115);
+  background-color: rgb(115, 115, 115);
+  color: white;
+  transition: background 0.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
