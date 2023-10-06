@@ -5,6 +5,7 @@
 }
 .topic h1 {
   padding: 20px 0 0 20px;
+  font-size: 30px;
 }
 
 hr {
@@ -40,23 +41,27 @@ body {
   width: 49%;
   margin-bottom: 20px;
 }
-.b-warp ul li:nth-child(2n+1) {
-  margin-right: 2%;
-}
 .b-warp ul li p {
   font-size: 20px;
   text-align: center;
-  margin-top: -5px;
 }
 .b-warp ul li p b {
   display: inline-block;
 }
-.b-warp ul li img {
+.b-warp ul li a {
+  display: block;
+  box-sizing: border-box;
+}
+.b-warp ul li a img {
+  height: 100%;
+  display: block;
   width: 100%;
 }
-.b-warp ul li img:hover {
-  border: 6px solid blue;
-  box-sizing: border-box;
+.b-warp ul li a:hover {
+  border: 5px solid blue;
+}
+.b-warp ul li:nth-child(2n+1) {
+  margin-right: 2%;
 }
 
 hr {

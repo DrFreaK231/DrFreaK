@@ -10,25 +10,27 @@
         li{
             width: 49% ;
             margin-bottom: 20px;
-            &:nth-child(2n+1){
-                margin-right: 2%;
-            }
             p{
                 font-size: 20px;
                 text-align: center;
-                margin-top: -5px;
                 b{
                     display: inline-block
                 }
             }
-            img{
-                width: 100%;   
-                
-                &:hover{
-                    border: 6px solid blue;
-                    box-sizing: border-box;
-
+            a{
+                display: block;
+                box-sizing: border-box;
+                img{
+                    height: 100%;
+                    display: block;
+                    width: 100%;
                 }
+                &:hover{
+                    border: 5px solid blue;  
+                }
+            }
+            &:nth-child(2n+1){
+                margin-right: 2%;
             }
         }
     }
