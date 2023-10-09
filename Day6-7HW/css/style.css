@@ -10,28 +10,34 @@ body {
 .logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo h1 {
   flex-direction: row;
-  font-weight: bold;
-  font-size: 2em;
-  color: #fff;
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+.logo h1 a {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+}
+.logo h1 a:hover {
+  color: #fff;
 }
 .logo ul {
   display: flex;
 }
-.logo ul li {
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-}
 .logo ul li a {
+  padding: 20px;
   flex-direction: row;
-  color: #fff;
+  color: rgb(201, 201, 201);
   text-decoration: none;
+}
+.logo ul li a:hover {
+  color: #fff;
 }
 
 .intro {
@@ -80,8 +86,11 @@ body {
   justify-content: space-between;
 }
 .slider-warp .slider-warp__icon a {
-  color: #fff;
+  color: rgb(201, 201, 201);
   text-decoration: none;
+}
+.slider-warp .slider-warp__icon a:hover {
+  color: #fff;
 }
 .slider-warp .slider-warp__imgs {
   display: flex;
@@ -143,8 +152,9 @@ footer .logo--foot {
   width: 60%;
   margin: 0 auto;
 }
-footer .logo--foot h1 {
+footer .logo--foot address {
   color: rgb(85, 85, 85);
   font-weight: normal;
   font-size: 12px;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
