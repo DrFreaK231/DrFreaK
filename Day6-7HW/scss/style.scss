@@ -99,7 +99,7 @@ body{
     .slider-warp__imgs{
         display: flex;
         
-        div{
+        .slider-warp__list{
             margin-right:30px;
             &:nth-child(3n+3){
                 margin-right: 0;
