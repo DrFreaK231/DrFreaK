@@ -47,10 +47,11 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.intro h1 {
+.intro .intro--2 {
   font-weight: bold;
   font-size: 2em;
   padding: 30px;
+  color: #fff;
 }
 .intro p {
   color: rgb(127, 127, 127);
@@ -61,9 +62,10 @@ body {
   width: 60%;
   margin: 0 0;
 }
-.intro--1 h1 {
+.intro--1 .intro--1--2 {
   padding: 20px 0;
   font-size: 2.5em;
+  color: #fff;
 }
 
 .img-warp ul li {
@@ -95,24 +97,24 @@ body {
 .slider-warp .slider-warp__imgs {
   display: flex;
 }
-.slider-warp .slider-warp__imgs li {
+.slider-warp .slider-warp__imgs div {
   margin-right: 30px;
 }
-.slider-warp .slider-warp__imgs li:nth-child(3n+3) {
+.slider-warp .slider-warp__imgs div:nth-child(3n+3) {
   margin-right: 0;
 }
-.slider-warp .slider-warp__imgs li .img-design {
+.slider-warp .slider-warp__imgs div .img-design {
   position: relative;
   width: 100%;
 }
-.slider-warp .slider-warp__imgs li .img-design p {
+.slider-warp .slider-warp__imgs div .img-design p {
   position: absolute;
   color: #fff;
   left: 0;
   top: 0;
   padding: 20px;
 }
-.slider-warp .slider-warp__imgs li .img-design a {
+.slider-warp .slider-warp__imgs div .img-design a {
   position: absolute;
   background-color: blue;
   color: #1E2126;
@@ -122,26 +124,26 @@ body {
   text-decoration: none;
   opacity: 0;
 }
-.slider-warp .slider-warp__imgs li .img-design:hover a {
+.slider-warp .slider-warp__imgs div .img-design:hover a {
   opacity: 1;
   transition: all 1s ease;
 }
-.slider-warp .slider-warp__imgs li .img-design img {
+.slider-warp .slider-warp__imgs div .img-design img {
   display: block;
   width: 100%;
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.slider-warp .slider-warp__imgs li .img-cap {
+.slider-warp .slider-warp__imgs div .img-cap {
   text-align: center;
 }
-.slider-warp .slider-warp__imgs li .img-cap h1 {
+.slider-warp .slider-warp__imgs div .img-cap .img-cap--cap {
   color: rgb(127, 127, 127);
   padding: 20px;
   font-size: 20px;
 }
-.slider-warp .slider-warp__imgs li .img-cap p {
+.slider-warp .slider-warp__imgs div .img-cap p {
   color: rgb(85, 85, 85);
 }
 

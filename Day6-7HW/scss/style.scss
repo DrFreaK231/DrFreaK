@@ -48,10 +48,11 @@ body{
     width: 60%;
     margin:0 auto;
     margin-bottom: 30px;
-    h1{
+    .intro--2{
         font-weight: bold;
         font-size: 2em;
         padding: 30px;
+        color: $text;
     }
     p{
         color:$text2;
@@ -61,9 +62,10 @@ body{
     text-align: left;
     width: 60%;
     margin: 0 0;
-    h1{
+    .intro--1--2{
         padding: 20px 0;
         font-size: 2.5em;
+        color: $text;
     }
 }
 .img-warp {
@@ -97,7 +99,7 @@ body{
     .slider-warp__imgs{
         display: flex;
         
-        li{
+        div{
             margin-right:30px;
             &:nth-child(3n+3){
                 margin-right: 0;
@@ -139,7 +141,7 @@ body{
             }
             .img-cap{
                 text-align: center;
-                h1{
+                .img-cap--cap{
                     color: $text2;
                     padding: 20px;
                     font-size: 20px;
