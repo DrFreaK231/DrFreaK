@@ -1,0 +1,74 @@
+.icon-setup {
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    bottom: 0;
+    z-index: 10;
+    margin-bottom: -30px;
+    a{
+        i {
+            background-color: $text;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    }
+}
+.foot-warp {
+    background-color: #FFD2C6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+
+
+    .left-foot {
+        width: 40%;
+        .left-text{
+            p{
+                font-family: 'Roboto' ,sans-serif;
+                font-size: 16px;
+            }
+            .heading{
+                @extend .heading
+            }
+        }
+        .left-download{
+            .prj-download{
+                display: flex;
+                .prj-download--apple{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .right-foot {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .headings{
+            font-family: 'Archivo Black',sans-serif;
+            margin: 21px 0;
+        }
+
+        ul{
+            li {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $text3;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+}
+address {
+    text-align: center;
+    background-color: #FFD2C6;
+    width: 100%;
+    padding: 20px 0;
+}
