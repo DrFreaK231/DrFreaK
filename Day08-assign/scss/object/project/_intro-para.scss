@@ -1,0 +1,27 @@
+.b-container {
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+.b-container-head {
+    justify-content: center;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 18px;
+        text-align: center;
+        color: $text;
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .headings {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 81px;
+        padding: 20px;
+    }
+}

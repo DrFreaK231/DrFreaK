@@ -1,0 +1,19 @@
+.header-photo {
+
+    &::before {
+        content: '';
+        background-image: url('/img/peakpx.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1080px;
+        width: 100%;
+        z-index: -1;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+
+    }
+}
