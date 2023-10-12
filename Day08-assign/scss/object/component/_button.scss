@@ -17,3 +17,113 @@
         color:$text
     }
 }
+.hidden{
+    display: none;
+}
+.menu-bg{
+    background-color: black;
+}
+.transit{
+    transition: all 1s ease;
+}
+.nav-bar {
+    ul {
+        display: flex;
+
+        li {
+            padding: 20px;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: $text2 ;
+                font-family: 'Roboto', sans-serif;
+
+                &:hover::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 30%;
+                    width: 30px;
+                    height: 2px;
+                    transform: rotate(45deg);
+                    background-color: red;
+                }
+
+                &:hover {
+                    color: $text;
+                }
+            }
+        }
+    }
+}
+.user {
+    display: flex;
+
+    .user-sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 30px;
+
+
+        a {
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: $text;
+            font-family: 'Archivo Black', sans-serif;
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .user--in {
+            border: 2px solid white;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: $text3;
+                z-index: -1;
+                border-radius: 30px;
+            }
+
+            &:hover::before {
+                transition: all 0.5s ease;
+                width: 100%;
+            }
+        }
+
+        .user--up {
+            margin-right: 10px;
+            color: $text;
+
+            &:hover {
+                color: $text3;
+            }
+
+            &::before {
+                border-radius: 30px;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: $text;
+                z-index: -1;
+            }
+
+            &:hover::before {
+
+                transition: all 0.5s ease;
+                width: 100%;
+            }
+        }
+    }
+}

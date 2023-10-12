@@ -5,10 +5,69 @@
   position: relative;
 }
 
-.logo {
+.logomenu {
   position: fixed;
   top: 0;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 2% 10%;
+  z-index: 100;
+}
+.logomenu .menu-options {
+  width: 20%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 2s ease;
+}
+.logomenu .menu-options .menu {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.logomenu .menu-options .menu-warp .nav-bar--col {
+  margin-bottom: 30px;
+}
+.logomenu .menu-options .menu-warp .nav-bar--col ul {
+  flex-direction: column;
+}
+.logomenu .menu-options .menu-warp .nav-bar--col ul li {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #fff;
+}
+.logomenu .menu-options .menu-warp .nav-bar--col ul li a:hover::after {
+  right: 10%;
+}
+.logomenu .menu-options .menu-warp .nav-bar--col ul li a:hover {
+  transform: translateY(-2px);
+}
+.logomenu .menu-options .user .user-sign .user--up {
+  transition: all 1s ease;
+}
+.logomenu .menu-options .user .user-sign .user--up:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+.logomenu .menu-options .user .user-sign .user--in {
+  transition: all 1s ease;
+}
+.logomenu .menu-options .user .user-sign .user--in:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -22,92 +81,15 @@
 .logo .logo-nav-warp .main-logo {
   padding: 10px 15px;
 }
-.logo .logo-nav-warp nav ul {
-  display: flex;
-}
-.logo .logo-nav-warp nav ul li {
-  padding: 20px;
-  position: relative;
-}
-.logo .logo-nav-warp nav ul li a {
-  text-decoration: none;
-  color: rgb(202, 202, 202);
-  font-family: "Roboto", sans-serif;
-}
-.logo .logo-nav-warp nav ul li a:hover::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 30%;
-  width: 30px;
-  height: 2px;
-  transform: rotate(45deg);
-  background-color: red;
-}
-.logo .logo-nav-warp nav ul li a:hover {
-  color: #fff;
-}
 
-.user {
-  display: flex;
+@media screen and (max-width: 400px) {
+  .logo {
+    display: none;
+  }
+  .logomenu {
+    display: flex;
+  }
 }
-.user .user-sign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 30px;
-}
-.user .user-sign a {
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Archivo Black", sans-serif;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-}
-.user .user-sign .user--in {
-  border: 2px solid white;
-}
-.user .user-sign .user--in::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  z-index: -1;
-  border-radius: 30px;
-}
-.user .user-sign .user--in:hover::before {
-  transition: all 0.5s ease;
-  width: 100%;
-}
-.user .user-sign .user--up {
-  margin-right: 10px;
-  color: #fff;
-}
-.user .user-sign .user--up:hover {
-  color: rgb(0, 0, 0);
-}
-.user .user-sign .user--up::before {
-  border-radius: 30px;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #fff;
-  z-index: -1;
-}
-.user .user-sign .user--up:hover::before {
-  transition: all 0.5s ease;
-  width: 100%;
-}
-
 .header-photo::before {
   content: "";
   background-image: url("/img/peakpx.jpg");
@@ -470,6 +452,104 @@ address {
 .hover-effect:hover, .main-card .main-card-warp .main-card__single .main-card-text .main-text-btn a:hover, .main-card .main-card-btn a:hover {
   background-color: #E76F51;
   color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-bg {
+  background-color: black;
+}
+
+.transit {
+  transition: all 1s ease;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li {
+  padding: 20px;
+  position: relative;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: rgb(202, 202, 202);
+  font-family: "Roboto", sans-serif;
+}
+.nav-bar ul li a:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  width: 30px;
+  height: 2px;
+  transform: rotate(45deg);
+  background-color: red;
+}
+.nav-bar ul li a:hover {
+  color: #fff;
+}
+
+.user {
+  display: flex;
+}
+.user .user-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.user .user-sign a {
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Archivo Black", sans-serif;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+.user .user-sign .user--in {
+  border: 2px solid white;
+}
+.user .user-sign .user--in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+  border-radius: 30px;
+}
+.user .user-sign .user--in:hover::before {
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.user .user-sign .user--up {
+  margin-right: 10px;
+  color: #fff;
+}
+.user .user-sign .user--up:hover {
+  color: rgb(0, 0, 0);
+}
+.user .user-sign .user--up::before {
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+}
+.user .user-sign .user--up:hover::before {
+  transition: all 0.5s ease;
+  width: 100%;
 }
 
 .heading, .foot-warp .left-foot .left-text .heading {
